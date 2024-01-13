@@ -66,12 +66,7 @@ per='2016apv'
 var=False
 if ejecutar==[MC_teor]: var=True
 else: var=False
-'''
-for i in muon:
-	json='json/2016/'+ i+'_2016.json'
-	nombre=i
-	os.system('python analysis/analisis/run.py %s -n %s %s -o %s' %(json, ncores, batch,nombre))
-'''
+
 def correr(lista,ncores,per,batch):
 	'''
 	función para correr a la vez varios jsons en función del periodo y la muestra
